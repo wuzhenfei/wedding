@@ -1,0 +1,410 @@
+#iSlider-wrapper ul li img{
+	display: block;
+	position: absolute;
+	width: 100%;
+}
+/* 第一屏 */
+.p1-img1{
+	top:0;
+	left:0;
+}
+.p1-0{
+	bottom:0;
+	left:0;
+}
+.p1-1{
+	bottom:24%;
+	left:0;
+}
+.p1-2{
+	bottom:2%;
+	left:50%;
+	width: 40%!important;
+	margin-left:-20%;
+}
+.p1-text1{
+	position: absolute;
+	width: 100%;
+	bottom:7%;
+	left:0;
+}
+.p1-text1 p{
+	font-family: guiqi;
+	border-color: rgb(0, 0, 0);
+	font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: rgb(100, 60, 27);
+    box-shadow: black 0px 0px 0px;
+    letter-spacing: 0px;
+}
+.p1-text1 p.ft22{
+	font-size: 22px;
+	line-height:44px;
+}
+/* 第二屏 */
+.p2-text1{
+	position: absolute;
+	font-family: serif;
+	left:0;
+	top:5%;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+.p2-box1{
+	position: absolute;
+	width: 80%;
+	left:10%;
+	top:16%;
+	height: 30%;
+}
+.box1-bg{
+	width: 100%;
+	height: 100%;
+	background:rgb(100, 60, 27); 
+}
+.p2-1{
+	width: 70%!important;
+	top: 47%;
+	left:15%;
+}
+.p2-text2{
+	position: absolute;
+	width: 254px;
+	top: 58%;
+	left:50%;
+	margin-left:-127px;
+	text-align: center;
+}
+.p2-text3{
+	position: absolute;
+	top: 76%;
+	left:0;
+	width: 100%;
+	text-align: center;
+}
+.p2-text4{
+	position: absolute;
+	top: 85%;
+	left:0;
+	width: 100%;
+	text-align: center;
+}
+.p2-text5{
+	position: absolute;
+	top: 91%;
+	left:0;
+	width: 100%;
+	text-align: center;
+}
+.p3-img1{
+	width:150px!important;
+	height: 150px;
+	border-radius: 50%;
+	left:50%;
+	top:50%;
+	margin-left: -75px;
+}
+.p3-1{
+	width: 65px!important;
+	left:50%;
+	top:61%;
+	transform: rotate(280deg);
+	margin-left: -95px;
+}
+.p3-2{
+	width: 65px!important;
+	right:50%;
+	top:61%;
+	transform: rotate(80deg);
+	margin-right: -95px;
+}
+/* 第五屏 */
+.p5-img1{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 40%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+}
+.p5-img1 img,.p5-img2 img,.p5-img3 img{
+	position: inherit!important;
+	height: auto;
+	max-height:inherit!important;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.p5-img2{
+	position: absolute;
+	bottom:10px;
+	left:0;
+	width: 50%;
+	height: 33%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+}
+.p5-img3{
+	position: absolute;
+	bottom:10px;
+	right:0;
+	width: 50%;
+	height: 33%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+}
+.p5-1{
+	width: 47px!important;
+	left: 5%;
+	top: 45%;
+}
+.p5-2{
+	width: 47px!important;
+	right: 5%;
+	top: 45%;
+}
+.p5-text1{
+	position: absolute;
+	top:47%;
+	width: 240px;
+	left:50%;
+	margin-left:-120px;
+	text-align: center;
+}
+/* 第六屏 */
+.p6-img1{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 65%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+}
+.p6-img1 img,.p6-img2 img,.p6-img3 img{
+	position: inherit!important;
+	height: auto;
+	max-height:inherit!important;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.p6-img2{
+	position: absolute;
+	bottom:10px;
+	right:40%;
+	width: 40%;
+	height: 20%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+	margin-right: -10px;
+}
+.p6-img3{
+	position: absolute;
+	bottom:10px;
+	right:0;
+	width: 40%;
+	height: 20%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+}
+.p6-text1{
+	position: absolute;
+	left: 7%;
+	bottom: 6%;
+	writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+}
+.p6-text1 p{
+	font-size: 14px!important;
+	line-height: 22px!important;
+}
+.p6-1{
+	bottom:20%;
+	left:20%;
+}
+.p6-2{
+	width: 30px!important;
+	right: 5%;
+	top: 66%;
+}
+/* 第起屏 */
+.p7-img1,.p7-img2,.p7-img3,.p7-img4,.p7-img5{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+}
+.p7-img2{
+	top:50%;
+	height: 25%;
+}
+.p7-img3{
+	top:auto;
+	bottom:0;
+	height: 25%;
+}
+.p7-img4{
+	top:auto;
+	left:auto;
+	right:0;
+	bottom:30%;
+	height: 30%;
+}
+.p7-img5{
+	top:auto;
+	left:auto;
+	right:0;
+	bottom:0;
+	height: 30%;
+}
+.p7-img1 img,.p7-img2 img,.p7-img3 img,.p7-img4 img,.p7-img5 img{
+	position: inherit!important;
+	height: auto;
+	min-height: 100%;
+	max-height:inherit!important;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+.p7-img4 img,.p7-img5 img{
+	padding-right: 20px;
+}
+.p7-1{
+	left:50%;
+	width: 70%!important;
+	top:5%;
+}
+.p7-text1{
+	position: absolute;
+	width: 154px;
+	left:52%;
+	top:20%;
+}
+.p7-text1 p{
+	line-height: 22px!important;
+	font-family: serif;
+}
+/* 第八屏幕 */
+.p8-img1,.p8-img2,.p8-img3,.p8-img4,.p8-img5,.p8-img6,.p8-img7,.p8-img8,.p8-img9{
+	position: absolute;
+	width: 32.5%;
+	height:20%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+}
+.p8-img1{
+	left:0;
+	top:0;
+}
+.p8-img2{
+	left:32.5%;
+	top:0;
+}
+.p8-img3{
+	left:65%;
+	top:0;
+}
+.p8-img4{
+	left:0;
+	top:20%;
+}
+.p8-img5{
+	left:32.5%;
+	top:20%;
+}
+.p8-img6{
+	left:65%;
+	top:20%;
+}
+.p8-img7{
+	left:0;
+	top:40%;
+}
+.p8-img8{
+	left:32.5%;
+	top:40%;
+}
+.p8-img9{
+	left:65%;
+	top:40%;
+}
+.p8-1{
+	top: 62%;
+	left:20%;
+}
+.p8-text1{
+	position: absolute;
+	left: 25%;
+	bottom: 6%;
+	padding-right: 10px;
+}
+/* 第九屏幕 */
+.p9-img1{
+	position: absolute;
+	top:2%;
+	right:10%;
+	width: 80%;
+	height:70%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:20px;
+}
+.p9-text1{
+	position: absolute;
+	left: 7%;
+	top: 6%;
+	writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+}
+.p9-text1 p{
+	font-size: 14px!important;
+	line-height: 22px!important;
+}
+.p9-text2{
+	position: absolute;
+	left: 7%;
+	bottom: 13%;
+	font-size: 32px;
+	width: 140px;
+	text-align: center;
+	line-height: 22px;
+	font-family: -webkit-pictograph;
+}
+.p9-text2 span{
+	font-size: 14px;
+}
+.phone-btn{
+	position: absolute;
+	text-align: center;
+    width: 100px;
+    height: 36px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 36px;
+    background-color: rgb(100, 60, 27);
+    border-radius: 40px;
+    border-style: none;
+    text-decoration: none;
+}
+.btn1{
+	right: 10%;
+	bottom: 20%;
+}
+.btn2{
+	right: 10%;
+	bottom: 10%;
+}

@@ -1,0 +1,85 @@
+/*时间控制样式*/
+.T0{
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
+.T5{
+	animation-delay:0.5s;
+	-webkit-animation-delay:0.5s;
+}
+.T10{
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+}
+.T15{
+	animation-delay:1.5s;
+	-webkit-animation-delay:1.5s;
+}
+.T20{
+	animation-delay:2s;
+	-webkit-animation-delay:2s;
+}
+.T25{
+	animation-delay:2.5s;
+	-webkit-animation-delay:2.5s;
+}
+.T30{
+	animation-delay:3s;
+	-webkit-animation-delay:3s;
+}
+.T35{
+	animation-delay:3.5s;
+	-webkit-animation-delay:3.5s;
+}
+.T40{
+	animation-delay:4;
+	-webkit-animation-delay:4s;
+}
+.T45{
+	animation-delay:4.5s;
+	-webkit-animation-delay:4.5s;
+}
+.T50{
+	animation-delay:5s;
+	-webkit-animation-delay:5s;
+}
+.T55{
+	animation-delay:5.5s;
+	-webkit-animation-delay:5.5s;
+}
+.T60{
+	animation-delay:6s;
+	-webkit-animation-delay:6s;
+}
+.T65{
+	animation-delay:6.5s;
+	-webkit-animation-delay:6.5s;
+}
+.T70{
+	animation-delay:7s;
+	-webkit-animation-delay:7s;
+}
+.T75{
+	animation-delay:7.5s;
+	-webkit-animation-delay:7.5s;
+}
+.Dura2{
+	-webkit-animation-duration:0.2s;
+	animation-duration:0.2s;
+}
+.Dura5{
+	-webkit-animation-duration:0.5s;
+	animation-duration:0.5s;
+}
+.Dura10{
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.Dura15{
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+}
+.Dura20{
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<link href="./css/iSlider.css" rel="stylesheet">
+		<link href="./css/common.css" rel="stylesheet">
+		<link href="./css/main.css" rel="stylesheet">
+		<link href="./css/Animate.css" rel="stylesheet">
+		<link href="./css/global.css" rel="stylesheet">
+		<script src="./js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="iSlider-wrapper"></div>
+		<div id="iSlider-arrow"></div>
+		<div id="music" class="music">
+			<audio src="./music/wedding.mp3" autoplay="autoplay" loop="loop" id="autoplay"></audio>
+			<div class="control on" id="musicBtn">
+				<div class="control-after"></div>
+			</div>
+		</div>
+		<!-- 飘花特效 -->
+		<div id="snowflake"></div>
+		<script src="./js/iSlider.js"></script>
+		<script id="show-code">
+			var list = [
+				{content: "<img src='./images/img-1.jpg' class='p1-img1 animated fadeInUp T0 Dura15'/><img src='./images/p1-0.png' class='p1-0'/><img src='./images/p1-1.png' class='p1-1 animated fadeIn T10 Dura5'/><img src='./images/p1-2.png' class='p1-2 animated flipInX T10 Dura5'/><div class='p1-text1'><p class='ft22 animated flipInX T10 Dura15'>吴振 & 华宝</p><p class='animated flipInX T20 Dura15'>湖北省汉川市回龙镇</p><p class='animated flipInX T30 Dura15'>2018年02月03日 腊月十八 13时14分</p></div>"},
+				{content: "<div class='p2-text1'><font size='24'>INVITATION</font></div><div class='p2-box1'><div class='box1-bg'><img src='./images/img-p2-1.jpg' class='p2-img1'/></div></div><img src='./images/p2-1.png' class='p2-1'/><div class='p2-text2'><p>在最美好的时间遇到最爱的人沉浸在幸福中的我们诚邀您来参加我们的婚礼</p></div><div class='p2-text3'><font size='4'>吴振 ❤ 华宝</font></div><div class='p2-text4'>2018年02月03日（腊月十八）星期六 13时14分</div><div class='p2-text5'>湖北省黄石市黄金山开发区</div>"},
+				{content: "<img src='./images/img-p3-1.jpg' class='p1-img1'/><img src='./images/p1-0.png' class='p1-0'/><img src='./images/img-p3-2.jpg' class='p3-img1'/><img src='./images/p3-1.png' class='p3-1'/><img src='./images/p3-2.png' class='p3-2'/><div class='p1-text1'><p class='ft22'>新娘：华宝</p><p>这一天我将穿着婚纱走向他</p><p>迎来我们人生的新起点</p></div>"},
+				{content: "<img src='./images/img-p4-1.jpg' class='p1-img1'/><img src='./images/p1-0.png' class='p1-0'/><img src='./images/img-p4-2.jpg' class='p3-img1'/><img src='./images/p3-1.png' class='p3-1'/><img src='./images/p3-2.png' class='p3-2'/><div class='p1-text1'><p class='ft22'>新郎：吴振</p><p>最美的风景是有你在的地方</p><p>一起踏上属于我们的前方</p></div>"},
+				{content: "<div class='p5-img1'><img src='./images/img-p5-1.jpg'/></div><div class='p5-img2'><img src='./images/img-p5-2.jpg'/></div><div class='p5-img3'><img src='./images/img-p5-3.jpg'/></div><img src='./images/p5-1.png' class='p5-1'/><img src='./images/p5-2.png' class='p5-2'/><div class='p5-text1'><p>不管你走在哪里我都会站在你看得见的地方如果有委屈有过错只要你回头我始终站在你的身后</p></div>"},
+				{content: "<div class='p6-img1'><img src='./images/img-p6-1.jpg'/></div><div class='p6-img2'><img src='./images/img-p6-2.jpg'/></div><div class='p6-img3'><img src='./images/img-p6-3.jpg'/></div><img src='./images/p6-1.png' class='p6-1'/><img src='./images/p5-2.png' class='p6-2'/><div class='p6-text1'><p>所有对未来的不确定里<br>你是我唯一的笃定</p></div>"},
+				{content: "<div class='p7-img1'><img src='./images/img-p7-1.jpg'/></div><div class='p7-img2'><img src='./images/img-p7-2.jpg'/></div><div class='p7-img3'><img src='./images/img-p7-3.jpg'/></div><div class='p7-img4'><img src='./images/img-p7-4.jpg'/></div><div class='p7-img5'><img src='./images/img-p7-5.jpg'/></div><img src='./images/p7-1.png' class='p7-1'/><div class='p7-text1'><p><font size='4'>恬淡的时光</font></p><p><font size='2'>In future, I will protect you <br>every step of the way.</font></p></div>"},
+				{content: "<div class='p8-img1'><img src='./images/img-p8-1.jpg'/></div><div class='p8-img2'><img src='./images/img-p8-2.jpg'/></div><div class='p8-img3'><img src='./images/img-p8-3.jpg'/></div><div class='p8-img4'><img src='./images/img-p8-4.jpg'/></div><div class='p8-img5'><img src='./images/img-p8-5.jpg'/></div><div class='p8-img6'><img src='./images/img-p8-6.jpg'/></div><div class='p8-img7'><img src='./images/img-p8-7.jpg'/></div><div class='p8-img8'><img src='./images/img-p8-8.jpg'/></div><div class='p8-img9'><img src='./images/img-p8-9.jpg'/></div><img src='./images/p8-1.png' class='p8-1'/><div class='p8-text1'><p>不管你走在哪里我都会站在你看得见的地方如果有委屈有过错只要你回头我始终站在你的身后</p></div>"},
+				{content: "<div class='p9-img1'><img src='./images/img-p9-1.jpg'/></div><div class='p9-text1'><p>YOU MAKE ME FEEL THAT LOVE IS TRUE</p></div><div class='p9-text2'>联系方式<br><span>Contect Information</span></div><a class='phone-btn btn1' href='tel://18811480131'>联系新娘</a><a class='phone-btn btn2'  href='tel://15620231347'>联系新郎</a>"}
+			];
+			var islider = new iSlider({
+				data: list,
+				dom: document.getElementById("iSlider-wrapper"),
+				isOverspread: true,
+				isVertical: true,
+				isLooping: false,
+				animateType: 'card',
+				onslidechange: function (idx) {
+					if (this.isLooping === false) {
+						if (idx === this.data.length - 1) {
+							document.getElementById('iSlider-arrow').style.display = 'none';
+						}
+						else {
+							document.getElementById('iSlider-arrow').style.display = 'block';
+						}
+					}
+				}
+			});
+			var audio = document.getElementById('autoplay');
+			var controller = document.getElementById('musicBtn');
+			document.getElementById('musicBtn').addEventListener('touchstart', function () {
+				if (audio.paused) {
+					audio.play();
+					controller.className = 'control on';
+				} else {
+					audio.pause();
+					controller.className = 'control';
+				}
+			}, false);
+			$(function() {
+				var snowflakeURl = [
+					'http://img.mukewang.com/55adde120001d34e00410041.png',
+					'http://img.mukewang.com/55adde2a0001a91d00410041.png',
+					'http://img.mukewang.com/55adde5500013b2500400041.png',
+					'http://img.mukewang.com/55adde62000161c100410041.png',
+					'http://img.mukewang.com/55adde7f0001433000410041.png',
+					'http://img.mukewang.com/55addee7000117b500400041.png'
+				]
+			    ///////
+			    //飘雪花 //
+			    ///////
+			    function snowflake() {
+			        // 雪花容器
+			        var $flakeContainer = $('#snowflake');
+
+			        // 随机六张图
+			        function getImagesName() {
+			            return snowflakeURl[[Math.floor(Math.random() * 6)]];
+			        }
+			        // 创建一个雪花元素
+			        function createSnowBox() {
+			            var url = getImagesName();
+			            return $('<div class="snowbox" />').css({
+			                'width': 41,
+			                'height': 41,
+			                'position': 'absolute',
+			                'backgroundSize': 'cover',
+			                'zIndex': 100000,
+			                'top': '-41px',
+			                'backgroundImage': 'url(' + url + ')'
+			            }).addClass('snowRoll');
+			        }
+			        // 开始飘花
+			        setInterval(function() {
+			            // 运动的轨迹
+			            var startPositionLeft = Math.random() * visualWidth - 100,
+			                startOpacity    = 1,
+			                endPositionTop  = visualHeight - 40,
+			                endPositionLeft = startPositionLeft - 100 + Math.random() * 500,
+			                duration        = visualHeight * 10 + Math.random() * 5000;
+
+			            // 随机透明度，不小于0.5
+			            var randomStart = Math.random();
+			            randomStart = randomStart < 0.5 ? startOpacity : randomStart;
+
+			            // 创建一个雪花
+			            var $flake = createSnowBox();
+
+			            // 设计起点位置
+			            $flake.css({
+			                left: startPositionLeft,
+			                opacity : randomStart
+			            });
+
+			            // 加入到容器
+			            $flakeContainer.append($flake);
+
+			            // 开始执行动画
+			            $flake.transition({
+			                top: endPositionTop,
+			                left: endPositionLeft,
+			                opacity: 0.7
+			            }, duration, 'ease-out', function() {
+			                $(this).remove() //结束后删除
+			            });
+			            
+			        }, 200);
+			    }
+			    snowflake()
+
+			})
+		</script>
+		<!--雪花飘落-->
+		<script src="js/flow.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/Swrip.js"></script>
+		<script type="text/javascript" src="js/demo.js"></script>
+	</body>
+</html>

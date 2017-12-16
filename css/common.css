@@ -1,0 +1,122 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    color:rgb(100, 60, 27);
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+p{
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    line-height: 32px;
+}
+/*ul wrapper*/
+#iSlider-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#iSlider-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#iSlider-wrapper li {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    list-style: none;
+}
+
+#iSlider-wrapper li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.music{
+	width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    z-index: 100;
+}
+.music .control {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    background-size: contain;
+}
+.music .control.on{
+	background: url('../images/music.gif') transparent no-repeat center center;
+}
+.music .control.on .control-after{
+	-webkit-animation: reverseRotataZ 1.2s linear infinite;
+}
+.music .control .control-after{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -.75rem;
+    margin-left: -.75rem;
+    background:  url('../images/music_off.png') transparent no-repeat center center;
+    background-size: 100% 100%;
+    -webkit-animation: rotate2d 1.2s linear infinite;
+    animation: rotate2d 1.2s linear infinite;
+    z-index: -1
+}
+
+@-webkit-keyframes reverseRotataZ {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(-360deg);
+    }
+}
+
+/* Arrow */
+#iSlider-arrow {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    margin: 0 auto;
+    border-top: 2px solid #e7e7e7;
+    border-right: 2px solid #e7e7e7;
+    z-index: 10000;
+    opacity: 0.8;
+    -webkit-animation: nextPage 1.2s linear infinite;
+}
+
+@-webkit-keyframes nextPage {
+    0% {
+        -webkit-transform: translateY(40px) rotate(-45deg);
+        opacity: 0.8;
+    }
+    50% {
+        -webkit-transform: translateY(20px) rotate(-45deg);
+        opacity: 0.4;
+    }
+    100% {
+        -webkit-transform: translateY(10px) rotate(-45deg);
+        opacity: 0;
+    }
+}
