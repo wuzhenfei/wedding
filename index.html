@@ -15,7 +15,7 @@
 		<div id="iSlider-wrapper"></div>
 		<div id="iSlider-arrow"></div>
 		<div id="music" class="music">
-			<audio src="./music/wedding.mp3" autoplay="autoplay" loop="loop" id="autoplay"></audio>
+			<audio autoplay="autoplay" loop="loop" id="autoplay"></audio>
 			<div class="control on" id="musicBtn">
 				<div class="control-after"></div>
 			</div>
@@ -55,6 +55,7 @@
 			});
 			var audio = document.getElementById('autoplay');
 			var controller = document.getElementById('musicBtn');
+			audio.src = "./music/wedding.mp3";
 			audio.play();
 			document.getElementById('musicBtn').addEventListener('touchstart', function () {
 				if (audio.paused) {
